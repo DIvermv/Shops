@@ -4,8 +4,6 @@ int buyer(void * buy)
  {
 	 struct Buy bay_potok= * (struct Buy * ) buy;
 
-	//unsigned int Nomer_potoka; 
-	//unsigned int buyer_number; 
         printf("Выстроилась очередь № %i из  %i покупателей.\n",bay_potok.Nomer_potoka,bay_potok.buyer_number);
    int b=1;
    while(b<(bay_potok.buyer_number+1))
@@ -23,9 +21,6 @@ int buyer(void * buy)
 	sleep(3);
      }
     }   
- // struct _f_name_data f_name_data= * (struct _f_name_data * ) f_data;
-    // статусная строка
-
         printf("Очередь %i закончилась.\n",bay_potok.Nomer_potoka);
 	   pthread_exit(0);
  }
