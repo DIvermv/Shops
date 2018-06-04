@@ -1,2 +1,2 @@
 all:
-	gcc main.c -o Shops  -lpthread
+	gcc main.c downLoader.c -o Shops  -lpthread
